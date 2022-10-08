@@ -16,7 +16,7 @@ BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.714
 Requires:	git-core >= 2.24.0
 Requires:	python3-modules >= 1:3.5
-Conflicts:	git-filter-repo < 2.34.0-2
+Conflicts:	git-filter-repo < 2.34.0-4
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
