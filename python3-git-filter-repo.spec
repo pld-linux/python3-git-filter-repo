@@ -1,13 +1,13 @@
 Summary:	Quickly rewrite git repository history
 Summary(pl.UTF-8):	Szybkie przepisywanie historii repozytorium
 Name:		python3-git-filter-repo
-Version:	2.34.0
+Version:	2.38.0
 Release:	1
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/git-filter-repo/
 Source0:	https://files.pythonhosted.org/packages/source/g/git-filter-repo/git-filter-repo-%{version}.tar.gz
-# Source0-md5:	14825e3c78de704a0244092600bf1fdc
+# Source0-md5:	3b04d9a47cdaf7485e4bc89db522b9d3
 URL:		https://pypi.org/project/git-filter-repo/
 BuildRequires:	python3-modules >= 1:3.5
 BuildRequires:	python3-setuptools
@@ -29,7 +29,7 @@ git filter-repo to wszechstronne narzędzie do przepisywania historii.
 %prep
 %setup -q -n git-filter-repo-%{version}
 
-# fix #!/usr/bin/env python -> #!/usr/bin/python:
+# use direct shebang
 %{__sed} -i -e '1s,/usr/bin/env python3,%{__python3},' git_filter_repo.py
 
 %build
