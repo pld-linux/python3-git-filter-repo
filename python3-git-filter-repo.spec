@@ -2,7 +2,7 @@ Summary:	Quickly rewrite git repository history
 Summary(pl.UTF-8):	Szybkie przepisywanie historii repozytorium
 Name:		python3-git-filter-repo
 Version:	2.47.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/git-filter-repo/
